@@ -1,7 +1,7 @@
 <?php 
-   $paragraph = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ipsum perspiciatis ad dolore nisi repudiandae rerum, quam sed iure in!";
-
-
+    $paragraph = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ipsum perspiciatis ad dolore nisi repudiandae rerum, quam sed iure in!";
+    $word = $_GET['name'];
+    $censored = str_replace($word, '***', $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -15,5 +15,7 @@
 <body>
     <p><?php echo $paragraph ?></p>
     <p><?php echo strlen($paragraph)?></p>
+    <p><?php echo $censored?></p>
+    <p><?php echo strlen($censored) ?></p>
 </body>
 </html>
