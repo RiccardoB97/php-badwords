@@ -14,5 +14,6 @@
 </head>
 <body>
     <p><?php echo $paragraph ?></p>
+    <p><?php echo strlen($paragraph)?></p>
 </body>
 </html>
