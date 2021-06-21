@@ -13,5 +13,6 @@
     <title>Bad Words</title>
 </head>
 <body>
+    <p><?php echo $paragraph ?></p>
 </body>
 </html>
